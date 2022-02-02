@@ -4,7 +4,8 @@ const inp = document.getElementById('tasks')
 const btn = document.getElementById('submit-button')
 //create cached element reference for ul
 const uL = document.getElementById('todo-list')
-
+//create cached element reference for reset button
+const rstBtn = document.getElementById('reset-button')
 
 //addEventListener to btn
 btn.addEventListener('click', function(evt) {

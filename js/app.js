@@ -12,13 +12,14 @@ btn.addEventListener('click', function(evt) {
   const newLi = document.createElement('li')
   //set text of newLi to text of inp
   newLi.innerText = inp.value 
+  //protect from empty input click
+  if (inp.value !== ""){
   //reset inp text field to empty string
   inp.value=""
   //add newLi to the page inside ul
   uL.appendChild(newLi)
 
   console.log(newLi)
+  }
 })
 
-rstBtn.addEventListener('click', function(evt)
-)
